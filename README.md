@@ -9,7 +9,8 @@ Install Minio:
 ```bash
 helm upgrade -i minio minio/minio  \
   --set rootUser=rootuser \
-  --set rootPassword=rootpass123
+  --set rootPassword=rootpass123 \
+  --set resources.requests.memory=128Mi
 ```
 
 
