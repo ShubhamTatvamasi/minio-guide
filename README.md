@@ -10,7 +10,8 @@ Install Minio:
 helm upgrade -i minio minio/minio  \
   --set rootUser=rootuser \
   --set rootPassword=rootpass123 \
-  --set resources.requests.memory=128Mi
+  --set resources.requests.memory=128Mi \
+  --set replicas=1
 ```
 
 
