@@ -12,4 +12,4 @@ helm upgrade -i minio bitnami/minio  \
   --set auth.rootPassword=rootpass123
 ```
 
-
+User `admin` Pass `rootpass123`
