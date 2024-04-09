@@ -1,17 +1,15 @@
 # minio-guide
 
-Add Minio Repo:
+Add Bitnami Repo:
 ```bash
-helm repo add minio https://charts.min.io/
+helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
 Install Minio:
 ```bash
-helm upgrade -i minio minio/minio  \
-  --set rootUser=rootuser \
-  --set rootPassword=rootpass123 \
-  --set resources.requests.memory=128Mi \
-  --set replicas=1
+helm upgrade -i minio bitnami/minio  \
+  --version 14.1.7 \
+  --set auth.rootPassword=rootpass123
 ```
 
 
